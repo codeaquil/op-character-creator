@@ -1,5 +1,7 @@
 'use client';
 
+import { settingsManager } from '../models/SettingsManager';
+
 export default function CharacterDisplay({ character, description, onGenerateNew, onEdit, showActions = true }) {
   if (!character) {
     return (
@@ -12,7 +14,10 @@ export default function CharacterDisplay({ character, description, onGenerateNew
   }
 
   const traits = character.getAllTraits();
-  const traitEntries = Object.entries(traits);
+  // Filter traits based on current settings - hide voice trait if disabled
+  const filteredTraits = Object.entries(traits).filter(([traitCode, traitValue]) => {
+    return settingsManager.shouldShowTrait(traitCode);
+  });
 
   return (
     <div className="bg-diamond rounded-lg p-6 shadow-lg">
@@ -31,11 +36,11 @@ export default function CharacterDisplay({ character, description, onGenerateNew
       )}
 
       {/* Trait Details */}
-      {traitEntries.length > 0 && (
+      {filteredTraits.length > 0 && (
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-outer-space mb-3">Trait Details</h3>
           <div className="space-y-2">
-            {traitEntries.map(([traitCode, traitValue]) => (
+            {filteredTraits.map(([traitCode, traitValue]) => (
               <div key={traitCode} className="bg-white/30 rounded-lg p-3">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                   <span className="font-medium text-outer-space capitalize">
