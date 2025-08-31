@@ -27,3 +27,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// Local Variables:
+// jinx-local-words: "antialiased geist"
+// End:

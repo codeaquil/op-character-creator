@@ -1,6 +1,8 @@
 # OP Characater Creator
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Generate your own character from the One Piece world!
+
+This [Next.js](https://nextjs.org) project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
