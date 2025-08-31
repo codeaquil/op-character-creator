@@ -14,6 +14,11 @@ export class SettingsManager {
    * Load settings from localStorage
    */
   loadSettings() {
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined') {
+      return;
+    }
+    
     try {
       const stored = localStorage.getItem(this.storageKey);
       if (stored) {
@@ -29,6 +34,11 @@ export class SettingsManager {
    * Save settings to localStorage
    */
   saveSettings() {
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined') {
+      return;
+    }
+    
     try {
       localStorage.setItem(this.storageKey, JSON.stringify(this.settings));
     } catch (error) {

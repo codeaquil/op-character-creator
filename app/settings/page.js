@@ -133,19 +133,6 @@ export default function SettingsPage() {
                 Reset to Defaults
               </button>
             </div>
-
-            {/* Info Section */}
-            <div className="border-t border-outer-space/20 pt-6 mt-6">
-              <h3 className="text-lg font-medium text-outer-space mb-3">
-                About Settings
-              </h3>
-              <div className="text-sm text-outer-space/70 space-y-2">
-                <p>• Settings are automatically saved to your browser's local storage</p>
-                <p>• Changes apply immediately to character generation and forms</p>
-                <p>• Existing characters are not affected by settings changes</p>
-                <p>• Settings persist between browser sessions</p>
-              </div>
-            </div>
           </div>
 
           {/* Current Settings Summary */}

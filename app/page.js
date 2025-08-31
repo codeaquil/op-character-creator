@@ -43,17 +43,6 @@ export default function Home() {
               </div>
             </Link>
           </div>
-
-          {/* Features */}
-          <div className="bg-diamond/50 rounded-lg p-4 mt-8">
-            <h3 className="font-semibold text-outer-space mb-2">Features:</h3>
-            <ul className="text-sm text-outer-space/80 space-y-1">
-              <li>• 5 unique character traits</li>
-              <li>• Randomized or manual creation</li>
-              <li>• Character descriptions</li>
-              <li>• Customizable settings</li>
-            </ul>
-          </div>
         </div>
       </main>
     </div>

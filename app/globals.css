@@ -10,6 +10,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Custom color palette */
+  --color-celtic-blue: #2F76DC;
+  --color-diamond: #B9EFF8;
+  --color-ripe-mango: #FBC920;
+  --color-alizarin-crimson: #E62C39;
+  --color-outer-space: #2E333F;
+  --color-crayola-gold: #DFC18A;
 }
 
 @media (prefers-color-scheme: dark) {

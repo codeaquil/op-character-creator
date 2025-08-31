@@ -80,12 +80,6 @@ export default function CharacterDisplay({ character, description, onGenerateNew
         </div>
       )}
 
-      {/* Character Info */}
-      <div className="mt-4 pt-4 border-t border-outer-space/20">
-        <div className="text-xs text-outer-space/60 text-center">
-          Character ID: {character.id}
-        </div>
-      </div>
     </div>
   );
 }
