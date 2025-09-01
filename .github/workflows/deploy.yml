@@ -55,7 +55,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
-        run:  next build # includes compile-data
+        run:  npm run build # includes compile-data
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
