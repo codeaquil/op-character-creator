@@ -14,16 +14,16 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-outer-space shadow-lg">
+    <nav className="bg-outer-space dark:bg-dark-outer-space shadow-lg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl">⚓</span>
-            <span className="text-ripe-mango font-bold text-lg hidden sm:block">
+            <span className="text-ripe-mango dark:text-dark-ripe-mango font-bold text-lg hidden sm:block">
               OP Character Creator
             </span>
-            <span className="text-ripe-mango font-bold text-lg sm:hidden">
+            <span className="text-ripe-mango dark:text-dark-ripe-mango font-bold text-lg sm:hidden">
               OPCC
             </span>
           </Link>
@@ -40,8 +40,8 @@ export default function Navigation() {
                     flex flex-col items-center px-3 py-2 rounded-lg text-xs font-medium transition-colors
                     min-w-[60px] sm:min-w-[80px]
                     ${isActive 
-                      ? 'bg-ripe-mango text-outer-space' 
-                      : 'text-diamond hover:text-ripe-mango hover:bg-outer-space/50'
+                      ? 'bg-ripe-mango dark:bg-dark-ripe-mango text-outer-space dark:text-dark-outer-space' 
+                      : 'text-diamond dark:text-gray-300 hover:text-ripe-mango dark:hover:text-dark-ripe-mango hover:bg-outer-space/50 dark:hover:bg-dark-diamond/50'
                     }
                   `}
                 >

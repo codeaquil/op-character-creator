@@ -75,8 +75,8 @@ export default function CharacterPage() {
         <main className="flex-1 flex items-center justify-center p-4">
           <div className="text-center">
             <div className="text-6xl mb-4">⚓</div>
-            <h2 className="text-2xl font-semibold text-outer-space mb-2">Loading...</h2>
-            <p className="text-outer-space/70">Preparing your character...</p>
+            <h2 className="text-2xl font-semibold text-outer-space dark:text-gray-200 mb-2">Loading...</h2>
+            <p className="text-outer-space/70 dark:text-gray-300">Preparing your character...</p>
           </div>
         </main>
       </div>
@@ -89,13 +89,13 @@ export default function CharacterPage() {
         <Navigation />
         <main className="flex-1 flex items-center justify-center p-4">
           <div className="max-w-md w-full">
-            <div className="bg-alizarin-crimson/10 border border-alizarin-crimson/30 rounded-lg p-6 text-center">
+            <div className="bg-alizarin-crimson/10 dark:bg-alizarin-crimson/20 border border-alizarin-crimson/30 dark:border-alizarin-crimson/50 rounded-lg p-6 text-center">
               <div className="text-4xl mb-4">⚠️</div>
-              <h2 className="text-xl font-semibold text-alizarin-crimson mb-2">Error</h2>
-              <p className="text-outer-space/70 mb-4">{error}</p>
+              <h2 className="text-xl font-semibold text-alizarin-crimson dark:text-red-400 mb-2">Error</h2>
+              <p className="text-outer-space/70 dark:text-gray-300 mb-4">{error}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="bg-ripe-mango hover:bg-ripe-mango/90 text-outer-space font-semibold py-2 px-4 rounded-lg transition-colors"
+                className="bg-ripe-mango dark:bg-dark-ripe-mango hover:bg-ripe-mango/90 dark:hover:bg-dark-ripe-mango/90 text-outer-space dark:text-dark-outer-space font-semibold py-2 px-4 rounded-lg transition-colors"
               >
                 Try Again
               </button>
@@ -113,10 +113,10 @@ export default function CharacterPage() {
       <main className="flex-1 p-4">
         <div className="max-w-2xl mx-auto">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-outer-space text-center mb-2">
+            <h1 className="text-3xl font-bold text-outer-space dark:text-gray-200 text-center mb-2">
               Character Generator
             </h1>
-            <p className="text-outer-space/70 text-center">
+            <p className="text-outer-space/70 dark:text-gray-300 text-center">
               Your randomly generated One Piece-inspired character
             </p>
           </div>

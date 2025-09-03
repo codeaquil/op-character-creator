@@ -11,10 +11,10 @@ export default function Home() {
           {/* Header */}
           <div className="text-center">
             <div className="text-8xl mb-4">⚓</div>
-            <h1 className="text-4xl font-bold text-outer-space mb-2">
+            <h1 className="text-4xl font-bold text-outer-space dark:text-gray-200 mb-2">
               OP Character Creator
             </h1>
-            <p className="text-outer-space/70 text-lg">
+            <p className="text-outer-space/70 dark:text-gray-300 text-lg">
               Generate your own One Piece-inspired character!
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="space-y-4">
             <Link
               href="/character"
-              className="w-full bg-ripe-mango hover:bg-ripe-mango/90 text-outer-space font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center min-h-[56px] shadow-lg"
+              className="w-full bg-ripe-mango dark:bg-dark-ripe-mango hover:bg-ripe-mango/90 dark:hover:bg-dark-ripe-mango/90 text-outer-space dark:text-dark-outer-space font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center min-h-[56px] shadow-lg"
             >
               <span className="text-2xl mr-3">🎲</span>
               <div className="text-left">
@@ -34,7 +34,7 @@ export default function Home() {
 
             <Link
               href="/form"
-              className="w-full bg-celtic-blue hover:bg-celtic-blue/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center min-h-[56px] shadow-lg"
+              className="w-full bg-celtic-blue dark:bg-dark-celtic-blue hover:bg-celtic-blue/90 dark:hover:bg-dark-celtic-blue/90 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center min-h-[56px] shadow-lg"
             >
               <span className="text-2xl mr-3">✏️</span>
               <div className="text-left">

@@ -102,8 +102,8 @@ export default function FormPage() {
         <main className="flex-1 flex items-center justify-center p-4">
           <div className="text-center">
             <div className="text-6xl mb-4">✏️</div>
-            <h2 className="text-2xl font-semibold text-outer-space mb-2">Loading...</h2>
-            <p className="text-outer-space/70">Preparing character form...</p>
+            <h2 className="text-2xl font-semibold text-outer-space dark:text-gray-200 mb-2">Loading...</h2>
+            <p className="text-outer-space/70 dark:text-gray-300">Preparing character form...</p>
           </div>
         </main>
       </div>
@@ -116,13 +116,13 @@ export default function FormPage() {
         <Navigation />
         <main className="flex-1 flex items-center justify-center p-4">
           <div className="max-w-md w-full">
-            <div className="bg-alizarin-crimson/10 border border-alizarin-crimson/30 rounded-lg p-6 text-center">
+            <div className="bg-alizarin-crimson/10 dark:bg-alizarin-crimson/20 border border-alizarin-crimson/30 dark:border-alizarin-crimson/50 rounded-lg p-6 text-center">
               <div className="text-4xl mb-4">⚠️</div>
-              <h2 className="text-xl font-semibold text-alizarin-crimson mb-2">Error</h2>
-              <p className="text-outer-space/70 mb-4">{error}</p>
+              <h2 className="text-xl font-semibold text-alizarin-crimson dark:text-red-400 mb-2">Error</h2>
+              <p className="text-outer-space/70 dark:text-gray-300 mb-4">{error}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="bg-ripe-mango hover:bg-ripe-mango/90 text-outer-space font-semibold py-2 px-4 rounded-lg transition-colors"
+                className="bg-ripe-mango dark:bg-dark-ripe-mango hover:bg-ripe-mango/90 dark:hover:bg-dark-ripe-mango/90 text-outer-space dark:text-dark-outer-space font-semibold py-2 px-4 rounded-lg transition-colors"
               >
                 Try Again
               </button>
@@ -140,10 +140,10 @@ export default function FormPage() {
       <main className="flex-1 p-4">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <h1 className="text-3xl font-bold text-outer-space text-center mb-2">
+            <h1 className="text-3xl font-bold text-outer-space dark:text-gray-200 text-center mb-2">
               Create Your Character
             </h1>
-            <p className="text-outer-space/70 text-center">
+            <p className="text-outer-space/70 dark:text-gray-300 text-center">
               Choose traits to build your One Piece-inspired character
             </p>
           </div>
@@ -151,8 +151,8 @@ export default function FormPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Form Section */}
             <div className="space-y-6">
-              <div className="bg-diamond rounded-lg p-6 shadow-lg">
-                <h2 className="text-xl font-semibold text-outer-space mb-4">Character Traits</h2>
+              <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 shadow-lg">
+                <h2 className="text-xl font-semibold text-outer-space dark:text-gray-200 mb-4">Character Traits</h2>
                 
                 {availableTraits.map((trait) => (
                   <TraitSelector
@@ -172,8 +172,8 @@ export default function FormPage() {
                     className={`
                       flex-1 font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center
                       ${isFormComplete
-                        ? 'bg-ripe-mango hover:bg-ripe-mango/90 text-outer-space'
-                        : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                        ? 'bg-ripe-mango dark:bg-dark-ripe-mango hover:bg-ripe-mango/90 dark:hover:bg-dark-ripe-mango/90 text-outer-space dark:text-dark-outer-space'
+                        : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
                       }
                     `}
                   >
@@ -183,7 +183,7 @@ export default function FormPage() {
                   
                   <button
                     onClick={handleReset}
-                    className="flex-1 bg-alizarin-crimson hover:bg-alizarin-crimson/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center"
+                    className="flex-1 bg-alizarin-crimson dark:bg-red-600 hover:bg-alizarin-crimson/90 dark:hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center"
                   >
                     <span className="mr-2">🔄</span>
                     Reset Form
@@ -191,7 +191,7 @@ export default function FormPage() {
                 </div>
 
                 {!isFormComplete && (
-                  <p className="text-sm text-outer-space/60 text-center mt-3">
+                  <p className="text-sm text-outer-space/60 dark:text-gray-400 text-center mt-3">
                     Please select all traits to save your character
                   </p>
                 )}
@@ -207,10 +207,10 @@ export default function FormPage() {
                   showActions={false}
                 />
               ) : (
-                <div className="bg-diamond rounded-lg p-6 text-center">
+                <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 text-center">
                   <div className="text-6xl mb-4">👻</div>
-                  <h3 className="text-xl font-semibold text-outer-space mb-2">Character Preview</h3>
-                  <p className="text-outer-space/70">
+                  <h3 className="text-xl font-semibold text-outer-space dark:text-gray-200 mb-2">Character Preview</h3>
+                  <p className="text-outer-space/70 dark:text-gray-300">
                     Start selecting traits to see your character come to life!
                   </p>
                 </div>

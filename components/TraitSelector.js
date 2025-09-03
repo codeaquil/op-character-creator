@@ -13,7 +13,7 @@ export default function TraitSelector({
 
   return (
     <div className="mb-6">
-      <label className="block text-lg font-semibold text-outer-space mb-2">
+      <label className="block text-lg font-semibold text-outer-space dark:text-gray-200 mb-2">
         {trait.title}
       </label>
       
@@ -23,9 +23,10 @@ export default function TraitSelector({
         disabled={disabled}
         className={`
           w-full p-4 rounded-lg border-2 text-base
-          bg-white border-celtic-blue/30
-          focus:border-celtic-blue focus:outline-none focus:ring-2 focus:ring-celtic-blue/20
-          disabled:bg-gray-100 disabled:text-gray-500 disabled:cursor-not-allowed
+          bg-white dark:bg-gray-800 border-celtic-blue/30 dark:border-dark-celtic-blue/30
+          text-outer-space dark:text-gray-200
+          focus:border-celtic-blue dark:focus:border-dark-celtic-blue focus:outline-none focus:ring-2 focus:ring-celtic-blue/20 dark:focus:ring-dark-celtic-blue/20
+          disabled:bg-gray-100 dark:disabled:bg-gray-700 disabled:text-gray-500 dark:disabled:text-gray-400 disabled:cursor-not-allowed
           min-h-[48px]
           ${disabled ? 'opacity-50' : ''}
         `}
@@ -42,8 +43,8 @@ export default function TraitSelector({
       
       {/* Preview sentence */}
       {selectedValue && (
-        <div className="mt-3 p-3 bg-diamond/50 rounded-lg">
-          <p className="text-outer-space/80 text-sm">
+        <div className="mt-3 p-3 bg-diamond/50 dark:bg-dark-diamond/50 rounded-lg">
+          <p className="text-outer-space/80 dark:text-gray-300 text-sm">
             <strong>Preview:</strong> {
               trait.sentence.replace(
                 '%XXX%', 
