@@ -3,11 +3,11 @@
   "version": "2025.08.31",
   "private": true,
   "scripts": {
-    "dev": "npm run compile-data && next dev",
     "build": "npm run compile-data && next build",
-    "start": "next start",
-		"lint": "eslint",
-		"compile-data": "json5 data/data.json5 -o public/data.json"
+    "serve": "serve -p 3000 -c serve.json",
+    "start": "npm run build && npm run serve",
+    "lint": "eslint",
+    "compile-data": "json5 data/data.json5 -o out/data.json"
   },
   "dependencies": {
     "json5": "^2.2.3",
@@ -20,6 +20,7 @@
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
+    "serve": "^14.2.4",
     "tailwindcss": "^4"
   }
 }

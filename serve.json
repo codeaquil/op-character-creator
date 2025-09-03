@@ -1,0 +1,6 @@
+{
+	"public": "out",
+	"rewrites": [
+		{ "source": "op-character-creator/:path", "destination": ":path" }
+	]
+}
