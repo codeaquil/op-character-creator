@@ -1,40 +1,48 @@
-# OP Characater Creator
+# OP Character Creator
 
-Generate your own character from the One Piece world!
+Generate your own character inspired by the world of One Piece!
 
-This [Next.js](https://nextjs.org) project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Running the Website
 
-## Getting Started
+This website is intended for [GitHub Pages](https://docs.github.com/en/pages).
+Enable GitHub Pages from settings and this website should be available at
+`https://<your-username>.github.io/op-character-creator`.
 
-First, run the development server:
+## Adding New Character Options
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Create a GitHub branch.
+2. Edit `data/data.json5` with any new character traits. The traits and format
+is commented in data/data.json5.
+3. Create a pull request.
+4. Merge the pull request and wait a few minutes for the new deployment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- NodeJS v22
+- Ruby 3 (optional)
 
-## Learn More
+### Quick Start
 
-To learn more about Next.js, take a look at the following resources:
+1. `npm i`
+2. `npm run start`
+3. To close the server: `Ctrl-C`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Ruby Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A secondary Ruby server is provided to better test this static pages app. To use
+it do:
 
-## Deploy on Vercel
+1. `bundle install`
+2. `ruby ./server.rb`
+3. To close the server: `Ctrl-C`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### How it works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The command `npm run compile-data` will use `json5` to transform the data for
+the website in the out/ folder. This is baked into the `npm run build` command,
+which also uses NextJS to build the entire website into out/. A static-file
+server must then serve the entire out/ folder and the website will operate
+normally. The website uses ReactJS 19 and TailwindCSS 4, and should work on all
+modern browsers.
