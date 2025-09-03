@@ -18,7 +18,7 @@ export default function SettingsPage() {
   const handleVoiceTraitToggle = () => {
     const newValue = settingsManager.toggleVoiceTrait();
     setShowVoiceTrait(newValue);
-    
+
     // Show save confirmation
     setSaveStatus('saved');
     setTimeout(() => setSaveStatus(''), 2000);
@@ -27,7 +27,7 @@ export default function SettingsPage() {
   const handleResetSettings = () => {
     settingsManager.resetSettings();
     setShowVoiceTrait(settingsManager.getShowVoiceTrait());
-    
+
     // Show reset confirmation
     setSaveStatus('reset');
     setTimeout(() => setSaveStatus(''), 2000);
@@ -51,7 +51,7 @@ export default function SettingsPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
-      
+
       <main className="flex-1 p-4">
         <div className="max-w-2xl mx-auto">
           <div className="mb-6">
@@ -65,7 +65,7 @@ export default function SettingsPage() {
 
           <div className="bg-diamond rounded-lg p-6 shadow-lg">
             <h2 className="text-xl font-semibold text-outer-space mb-6">Character Options</h2>
-            
+
             {/* Voice Trait Toggle */}
             <div className="mb-8">
               <div className="flex items-start justify-between mb-4">
@@ -74,11 +74,11 @@ export default function SettingsPage() {
                     Voice Trait
                   </h3>
                   <p className="text-outer-space/70 text-sm">
-                    Include voice and vocal quirks in character generation. 
+                    Include voice and vocal quirks in character generation.
                     Some players may find these traits difficult to mimic during roleplay.
                   </p>
                 </div>
-                
+
                 <button
                   onClick={handleVoiceTraitToggle}
                   className={`
@@ -94,10 +94,10 @@ export default function SettingsPage() {
                   />
                 </button>
               </div>
-              
+
               <div className="text-sm">
                 <span className="text-outer-space/60">Status: </span>
-                <span className={`font-medium ${showVoiceTrait ? 'text-ripe-mango' : 'text-gray-500'}`}>
+                <span className={`font-bold ${showVoiceTrait ? 'text-outer-space' : 'text-gray-500'}`}>
                   {showVoiceTrait ? 'Enabled' : 'Disabled'}
                 </span>
               </div>
@@ -124,7 +124,7 @@ export default function SettingsPage() {
               <p className="text-outer-space/70 text-sm mb-4">
                 Reset all settings back to their default values.
               </p>
-              
+
               <button
                 onClick={handleResetSettings}
                 className="bg-alizarin-crimson hover:bg-alizarin-crimson/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center"
@@ -132,19 +132,6 @@ export default function SettingsPage() {
                 <span className="mr-2">🔄</span>
                 Reset to Defaults
               </button>
-            </div>
-          </div>
-
-          {/* Current Settings Summary */}
-          <div className="mt-6 bg-white/30 rounded-lg p-4">
-            <h3 className="font-medium text-outer-space mb-2">Current Configuration</h3>
-            <div className="text-sm text-outer-space/70">
-              <div className="flex justify-between items-center">
-                <span>Voice Trait:</span>
-                <span className={`font-medium ${showVoiceTrait ? 'text-ripe-mango' : 'text-gray-500'}`}>
-                  {showVoiceTrait ? 'Enabled' : 'Disabled'}
-                </span>
-              </div>
             </div>
           </div>
         </div>
