@@ -3,7 +3,7 @@
   "version": "2025.08.31",
   "private": true,
   "scripts": {
-    "build": "npm run compile-data && next build",
+    "build": "next build && npm run compile-data",
     "serve": "serve -p 3000 -c serve.json",
     "start": "npm run build && npm run serve",
     "lint": "eslint",
