@@ -13,11 +13,11 @@ export class DataManager {
    */
   async loadData() {
     try {
-      const response = await fetch('/data.json');
+      const response = await fetch('/op-character-creator/data.json');
       if (!response.ok) {
         throw new Error(`Failed to load data: ${response.status}`);
       }
-      
+
       this.data = await response.json();
       this.processData();
       return this.data;
@@ -34,7 +34,7 @@ export class DataManager {
     if (!this.data) return;
 
     this.traits = this.data.traits || [];
-    
+
     // Group trait values by trait_code
     this.traitValues.clear();
     if (this.data.trait_values) {
