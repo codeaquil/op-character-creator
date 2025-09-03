@@ -46,6 +46,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Check JSON5 Data
-        run: npm run compile-data
+        run: npm run test-data
       - name: Check JavaScript
         run:  npm run build # includes compile-data
