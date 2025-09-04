@@ -1,5 +1,9 @@
 # OP Character Creator
 
+[![MextJS Deployment Pipeline](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml/badge.svg)](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml)
+![Pirate King Monkey D Luffy](https://img.shields.io/badge/Pirate%20King-Monkey%20D%20Luffy-E62C39)
+
+
 Generate your own character inspired by the world of One Piece!
 
 ## Running the Website
