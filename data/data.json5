@@ -8,40 +8,46 @@ When the application is built it should automatically compile it into
 true JSON at public/data.json.
  ************************************************************************/
 {
-		"meta": {
-				"data_schema_version": "0.0.1"
+	meta: {
+		data_schema_version: '0.0.1',
+	},
+	traits: [
+		{
+			id: 1,
+			code: 'facial_trait',
+			title: 'Hair & Facial Features',
+			sentence: 'They have %XXX%.',
 		},
-		"traits": [
-				{ "id": 1, "code": "facial_trait", "title": "Hair & Facial Features", "sentence": "They have %XXX%."  },
-				{ "id": 2, "code": "body_trait", "title": "Body, Clothes, or Accessories", "sentence": "They don %XXX%." },
-				{ "id": 3, "code": "personality_trait", "title": "Personality Quirk", "sentence": "They are %XXX%." },
-				{ "id": 4, "code": "voice_trait", "title": "Voice or Vocal Quirk", "sentence": "Their voice is %XXX%." },
-				{ "id": 5, "code": "weapon_trait", "title": "Weaponry", "sentence": "They attack using %XXX%." },
-
-		],
-		"trait_values": [
-				{ "id": 1,   "trait_code": "facial_trait",      "value": "a long curved moustache" },
-				{ "id": 2,   "trait_code": "body_trait",        "value": "a captain's code with red and gold accents" },
-				{ "id": 3,   "trait_code": "personality_trait", "value": "overly confident" },
-				{ "id": 4,   "trait_code": "voice_trait",       "value": "exactly what you think a pirate would sound like" },
-				{ "id": 5,   "trait_code": "weapon_trait",      "value": "a simple curved blade and intimidating aura" }, /* I made this up - not from the google sheet */
-
-				{ "id": 6,   "trait_code": "facial_trait",      "value": "a scar under the left eye" },
-				{ "id": 7,   "trait_code": "body_trait",        "value": "a straw hat" },
-				{ "id": 8,   "trait_code": "personality_trait", "value": "loud and carefree" },
-				{ "id": 9,   "trait_code": "voice_trait",       "value": "always hungry" },
-				{ "id": 10,  "trait_code": "weapon_trait",      "value": "arms that outstretch like rubber" },
-
-				/*********************************************************************
-				// To add more data copy the below outside the asterisks, replace
-				// NN with the next 5 serial numbers, and fill in the new values:
-				
-				{ "id": NN,  "trait_code": "facial_trait",      "value": "" },
-				{ "id": NN,  "trait_code": "body_trait",        "value": "" },
-				{ "id": NN,  "trait_code": "personality_trait", "value": "" },
-				{ "id": NN,  "trait_code": "voice_trait",       "value": "" },
-				{ "id": NN,  "trait_code": "weapon_trait",      "value": "" },
-				
-				 *********************************************************************/				
-		]
+		{
+			id: 2,
+			code: 'body_trait',
+			title: 'Body, Clothes, or Accessories',
+			sentence: 'They don %XXX%.',
+		},
+		{
+			id: 3,
+			code: 'personality_trait',
+			title: 'Personality Quirk',
+			sentence: 'They are %XXX%.',
+		},
+		{
+			id: 4,
+			code: 'voice_trait',
+			title: 'Voice or Vocal Quirk',
+			sentence: 'Their voice is %XXX%.',
+		},
+		{
+			id: 5,
+			code: 'weapon_trait',
+			title: 'Weaponry',
+			sentence: 'They attack using %XXX%.',
+		},
+	],
+	trait_values: [
+		{
+			id: 1,
+			trait_code: 'facial_trait',
+			value: 'a long curved moustache',
+		},
+    ]
 }
