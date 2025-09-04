@@ -3,7 +3,6 @@
 [![MextJS Deployment Pipeline](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml/badge.svg)](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml)
 ![Pirate King Monkey D Luffy](https://img.shields.io/badge/Pirate%20King-Monkey%20D%20Luffy-E62C39)
 
-
 Generate your own character inspired by the world of One Piece!
 
 ## Running the Website
@@ -50,3 +49,36 @@ which also uses NextJS to build the entire website into out/. A static-file
 server must then serve the entire out/ folder and the website will operate
 normally. The website uses ReactJS 19 and TailwindCSS 4, and should work on all
 modern browsers.
+
+## License
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <https://unlicense.org>
+
+### Disclaimer
+
+One Piece is owned by Shueisha and Eiichiro Oda. This software is not
+affiliated with them in anyway, and is only taking inspiration from
+One Piece under fair use.
