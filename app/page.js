@@ -10,7 +10,7 @@ export default function Home() {
         <div className="max-w-md w-full space-y-8">
           {/* Header */}
           <div className="text-center">
-            <div className="text-8xl mb-4">⚓</div>
+            <img src="/StrawHatsLogo.svg" alt="A Straw Hat on a Pirate Skull and Crossbones making the One Piece Logo" className="w-32 h-32 mb-4 mx-auto" />
             <h1 className="text-4xl font-bold text-outer-space dark:text-gray-200 mb-2">
               OP Character Creator
             </h1>
