@@ -49,5 +49,1260 @@ true JSON at public/data.json.
 			trait_code: 'facial_trait',
 			value: 'a long curved moustache',
 		},
-    ]
+		{
+			id: 2,
+			trait_code: 'body_trait',
+			value: "a captain's coat with red and gold accents",
+		},
+		{
+			id: 3,
+			trait_code: 'personality_trait',
+			value: 'overly confident',
+		},
+		{
+			id: 4,
+			trait_code: 'voice_trait',
+			value: 'exactly what you think a pirate would sound like',
+		},
+		{
+			id: 5,
+			trait_code: 'facial_trait',
+			value: 'straight, crimson-red hair',
+		},
+		{
+			id: 6,
+			trait_code: 'body_trait',
+			value: 'a long, black cape draped over his shoulders',
+		},
+		{
+			id: 7,
+			trait_code: 'personality_trait',
+			value: 'charismatic and easy-going',
+		},
+		{
+			id: 8,
+			trait_code: 'facial_trait',
+			value: 'a scar across the left eye in the shape of three, straight lines',
+		},
+		{
+			id: 9,
+			trait_code: 'body_trait',
+			value: 'a simple white shirt that is open at the collar',
+		},
+		{
+			id: 10,
+			trait_code: 'facial_trait',
+			value: 'a scar under the left eye',
+		},
+		{
+			id: 11,
+			trait_code: 'body_trait',
+			value: 'a straw hat',
+		},
+		{
+			id: 12,
+			trait_code: 'personality_trait',
+			value: 'always hungry',
+		},
+		{
+			id: 13,
+			trait_code: 'voice_trait',
+			value: 'loud and carefree',
+		},
+		{
+			id: 14,
+			trait_code: 'weapon_trait',
+			value: 'arms that outstretch like rubber',
+		},
+		{
+			id: 15,
+			trait_code: 'facial_trait',
+			value: 'a scar above the right eye in the shape of an X',
+		},
+		{
+			id: 16,
+			trait_code: 'body_trait',
+			value: 'a red vest',
+		},
+		{
+			id: 17,
+			trait_code: 'personality_trait',
+			value: 'has a perpetually cheerful grin',
+		},
+		{
+			id: 18,
+			trait_code: 'voice_trait',
+			value: 'high-pitched and enthusiastic',
+		},
+		{
+			id: 19,
+			trait_code: 'weapon_trait',
+			value: 'cutlass',
+		},
+		{
+			id: 20,
+			trait_code: 'body_trait',
+			value: 'a striped green shirt',
+		},
+		{
+			id: 21,
+			trait_code: 'weapon_trait',
+			value: 'flintlock pistol',
+		},
+		{
+			id: 22,
+			trait_code: 'facial_trait',
+			value: 'a pair of red-tinted goggles',
+		},
+		{
+			id: 23,
+			trait_code: 'body_trait',
+			value: 'a very large and round physique',
+		},
+		{
+			id: 24,
+			trait_code: 'personality_trait',
+			value: 'always seen with a large piece of meat',
+		},
+		{
+			id: 25,
+			trait_code: 'voice_trait',
+			value: 'a deep, booming voice with a carefree laugh',
+		},
+		{
+			id: 26,
+			trait_code: 'body_trait',
+			value: 'a large, white cowboy hat with a red feather sticking out of it',
+		},
+		{
+			id: 27,
+			trait_code: 'personality_trait',
+			value: 'extremely vain and easily insulted',
+		},
+		{
+			id: 28,
+			trait_code: 'voice_trait',
+			value: 'harsh and commanding',
+		},
+		{
+			id: 29,
+			trait_code: 'weapon_trait',
+			value: 'a large, spiked, iron mace',
+		},
+		{
+			id: 30,
+			trait_code: 'facial_trait',
+			value: 'a pink-haired bowl-cut',
+		},
+		{
+			id: 31,
+			trait_code: 'personality_trait',
+			value: 'anxious and jittery',
+		},
+		{
+			id: 32,
+			trait_code: 'voice_trait',
+			value: 'often stutters',
+		},
+		{
+			id: 33,
+			trait_code: 'facial_trait',
+			value: 'mossy, green hair',
+		},
+		{
+			id: 34,
+			trait_code: 'body_trait',
+			value: 'a dark green bandana around their head',
+		},
+		{
+			id: 35,
+			trait_code: 'personality_trait',
+			value: 'gets lost easily',
+		},
+		{
+			id: 36,
+			trait_code: 'voice_trait',
+			value: 'direct and to-the-point',
+		},
+		{
+			id: 37,
+			trait_code: 'weapon_trait',
+			value: 'three katanas',
+		},
+		{
+			id: 38,
+			trait_code: 'facial_trait',
+			value: 'an exaggeratedly long, pointed chin',
+		},
+		{
+			id: 39,
+			trait_code: 'body_trait',
+			value: 'a purple suit with a pink collar and pink sleeve cuffs',
+		},
+		{
+			id: 40,
+			trait_code: 'personality_trait',
+			value: "believes they're in charge",
+		},
+		{
+			id: 41,
+			trait_code: 'voice_trait',
+			value: 'sultry',
+		},
+		{
+			id: 42,
+			trait_code: 'weapon_trait',
+			value: 'a cursed sword',
+		},
+		{
+			id: 43,
+			trait_code: 'facial_trait',
+			value: 'a thick, metal, prosthetic chin',
+		},
+		{
+			id: 44,
+			trait_code: 'body_trait',
+			value: 'an ornate, sleeveless, overcoat of purples and blues',
+		},
+		{
+			id: 45,
+			trait_code: 'personality_trait',
+			value: 'always threatening others',
+		},
+		{
+			id: 46,
+			trait_code: 'voice_trait',
+			value: 'gruff and gravely',
+		},
+		{
+			id: 47,
+			trait_code: 'weapon_trait',
+			value: 'an huge, steel axe in place of their right arm',
+		},
+		{
+			id: 48,
+			trait_code: 'facial_trait',
+			value: 'deep, blue hair tied back in a ponytail',
+		},
+		{
+			id: 49,
+			trait_code: 'body_trait',
+			value: 'a white and blue martial arts gi',
+		},
+		{
+			id: 50,
+			trait_code: 'voice_trait',
+			value: 'firm and serious',
+		},
+		{
+			id: 51,
+			trait_code: 'weapon_trait',
+			value: 'a bamboo training sword',
+		},
+		{
+			id: 52,
+			trait_code: 'facial_trait',
+			value: 'orange hair',
+		},
+		{
+			id: 53,
+			trait_code: 'body_trait',
+			value: 'a tattoo on her left shoulder',
+		},
+		{
+			id: 54,
+			trait_code: 'personality_trait',
+			value: 'loves money more than anything else',
+		},
+		{
+			id: 55,
+			trait_code: 'voice_trait',
+			value: 'smooth and clear',
+		},
+		{
+			id: 56,
+			trait_code: 'weapon_trait',
+			value: 'a steel, blue staff that can manipulate the weather',
+		},
+		{
+			id: 57,
+			trait_code: 'facial_trait',
+			value: "a large, round, red, clown's nose",
+		},
+		{
+			id: 58,
+			trait_code: 'body_trait',
+			value: 'a red and white striped shirt with matching socks',
+		},
+		{
+			id: 59,
+			trait_code: 'personality_trait',
+			value: 'a coward at heart with a huge ego',
+		},
+		{
+			id: 60,
+			trait_code: 'voice_trait',
+			value: 'arrogant and theatrical',
+		},
+		{
+			id: 61,
+			trait_code: 'weapon_trait',
+			value: 'a handful of throwing daggers',
+		},
+		{
+			id: 62,
+			trait_code: 'facial_trait',
+			value: "blue hair that really looks like a clown's wig",
+		},
+		{
+			id: 63,
+			trait_code: 'body_trait',
+			value: 'a pair of clean, white gloves',
+		},
+		{
+			id: 64,
+			trait_code: 'weapon_trait',
+			value: 'a cannon',
+		},
+		{
+			id: 65,
+			trait_code: 'facial_trait',
+			value: 'bald head and a thick, bushy moustache',
+		},
+		{
+			id: 66,
+			trait_code: 'personality_trait',
+			value: 'courageous and stubborn',
+		},
+		{
+			id: 67,
+			trait_code: 'weapon_trait',
+			value: 'bare hands',
+		},
+		{
+			id: 68,
+			trait_code: 'facial_trait',
+			value: 'wild, unkempt hair that sticks straight up',
+		},
+		{
+			id: 69,
+			trait_code: 'body_trait',
+			value: 'a white, lion costume that cuts off at the waist',
+		},
+		{
+			id: 70,
+			trait_code: 'voice_trait',
+			value: 'slightly manic',
+		},
+		{
+			id: 71,
+			trait_code: 'weapon_trait',
+			value: 'a whip',
+		},
+		{
+			id: 72,
+			trait_code: 'facial_trait',
+			value: 'long, straight, black hair tied in a topknot',
+		},
+		{
+			id: 73,
+			trait_code: 'body_trait',
+			value: 'a dark, circus-style uniform with a cape and a scarf',
+		},
+		{
+			id: 74,
+			trait_code: 'voice_trait',
+			value: 'dramatic and theatrical',
+		},
+		{
+			id: 75,
+			trait_code: 'weapon_trait',
+			value: 'a unicycle',
+		},
+		{
+			id: 76,
+			trait_code: 'facial_trait',
+			value: 'dark, green hair that resembles a bush',
+		},
+		{
+			id: 77,
+			trait_code: 'personality_trait',
+			value: 'extremely stubborn and persistent',
+		},
+		{
+			id: 78,
+			trait_code: 'voice_trait',
+			value: 'raspy and weathered',
+		},
+		{
+			id: 79,
+			trait_code: 'facial_trait',
+			value: 'a very long nose',
+		},
+		{
+			id: 80,
+			trait_code: 'body_trait',
+			value: 'brown overalls',
+		},
+		{
+			id: 81,
+			trait_code: 'personality_trait',
+			value: 'a compulsive liar',
+		},
+		{
+			id: 82,
+			trait_code: 'voice_trait',
+			value: 'squeaky and loud',
+		},
+		{
+			id: 83,
+			trait_code: 'weapon_trait',
+			value: 'a slingshot',
+		},
+		{
+			id: 84,
+			trait_code: 'facial_trait',
+			value: 'a mustard-colored, striped bandana',
+		},
+		{
+			id: 85,
+			trait_code: 'personality_trait',
+			value: 'a coward at heart',
+		},
+		{
+			id: 86,
+			trait_code: 'facial_trait',
+			value: 'a round head with hair in the shape of an onion',
+		},
+		{
+			id: 87,
+			trait_code: 'weapon_trait',
+			value: 'a wooden, toy sword',
+		},
+		{
+			id: 88,
+			trait_code: 'facial_trait',
+			value: 'white hair in the shape of a carrot',
+		},
+		{
+			id: 89,
+			trait_code: 'body_trait',
+			value: 'bright orange shorts',
+		},
+		{
+			id: 90,
+			trait_code: 'personality_trait',
+			value: 'very agreeable',
+		},
+		{
+			id: 91,
+			trait_code: 'weapon_trait',
+			value: 'a frying pan',
+		},
+		{
+			id: 92,
+			trait_code: 'facial_trait',
+			value: 'green hair in the shape of a bell pepper',
+		},
+		{
+			id: 93,
+			trait_code: 'personality_trait',
+			value: 'skeptical and analytical',
+		},
+		{
+			id: 94,
+			trait_code: 'voice_trait',
+			value: 'nerdy and often asks questions in a hesitant tone',
+		},
+		{
+			id: 95,
+			trait_code: 'weapon_trait',
+			value: 'a simple stick',
+		},
+		{
+			id: 96,
+			trait_code: 'facial_trait',
+			value: 'long, blonde hair tied with a silky ribbon',
+		},
+		{
+			id: 97,
+			trait_code: 'body_trait',
+			value: 'an elegant, formal dress',
+		},
+		{
+			id: 98,
+			trait_code: 'personality_trait',
+			value: 'kind and compassionate',
+		},
+		{
+			id: 99,
+			trait_code: 'voice_trait',
+			value: 'polite and formal, indicating high-class',
+		},
+		{
+			id: 100,
+			trait_code: 'body_trait',
+			value: 'fluffy, purple slippers',
+		},
+		{
+			id: 101,
+			trait_code: 'voice_trait',
+			value: "frail, with a cough that's attempting to be hidden",
+		},
+		{
+			id: 102,
+			trait_code: 'facial_trait',
+			value: "a distinctive, curly beard that resembles sheep's wool",
+		},
+		{
+			id: 103,
+			trait_code: 'body_trait',
+			value: "a formal butler's suit with a bow tie",
+		},
+		{
+			id: 104,
+			trait_code: 'personality_trait',
+			value: 'polite and worrisome',
+		},
+		{
+			id: 105,
+			trait_code: 'facial_trait',
+			value: 'short, slicked-back, black hair',
+		},
+		{
+			id: 106,
+			trait_code: 'body_trait',
+			value: "a pristine butler's suit with a popped collar",
+		},
+		{
+			id: 107,
+			trait_code: 'personality_trait',
+			value: 'constantly adjusting his glasses',
+		},
+		{
+			id: 108,
+			trait_code: 'voice_trait',
+			value: 'calm and composed',
+		},
+		{
+			id: 109,
+			trait_code: 'weapon_trait',
+			value: 'a pair of long, bladed gloves',
+		},
+		{
+			id: 110,
+			trait_code: 'facial_trait',
+			value: 'wild and disheveled black hair',
+		},
+		{
+			id: 111,
+			trait_code: 'voice_trait',
+			value: 'deep, menacing, and condescending',
+		},
+		{
+			id: 112,
+			trait_code: 'facial_trait',
+			value: 'a pair of red, heart-shaped glasses',
+		},
+		{
+			id: 113,
+			trait_code: 'body_trait',
+			value: 'a lime-green, collared shirt with a long, teal tie',
+		},
+		{
+			id: 114,
+			trait_code: 'personality_trait',
+			value: 'moonwalks everywhere',
+		},
+		{
+			id: 115,
+			trait_code: 'voice_trait',
+			value: 'nasally and dramatic',
+		},
+		{
+			id: 116,
+			trait_code: 'weapon_trait',
+			value: 'two, large, bladed chakrams',
+		},
+		{
+			id: 117,
+			trait_code: 'facial_trait',
+			value: 'long, messy, tan hair',
+		},
+		{
+			id: 118,
+			trait_code: 'body_trait',
+			value: 'a blue, wide-brimmed hat',
+		},
+		{
+			id: 119,
+			trait_code: 'voice_trait',
+			value: 'known for ending sentences with a flourish',
+		},
+		{
+			id: 120,
+			trait_code: 'weapon_trait',
+			value: 'hypnotism',
+		},
+		{
+			id: 121,
+			trait_code: 'facial_trait',
+			value: 'black hair that curves up into two points like cat ears',
+		},
+		{
+			id: 122,
+			trait_code: 'body_trait',
+			value: 'shirtless with a striped purple cape',
+		},
+		{
+			id: 123,
+			trait_code: 'personality_trait',
+			value: 'serious and stoic',
+		},
+		{
+			id: 124,
+			trait_code: 'voice_trait',
+			value: 'deep, menacing, and gruff',
+		},
+		{
+			id: 125,
+			trait_code: 'weapon_trait',
+			value: 'a large, serrated swor',
+		},
+		{
+			id: 126,
+			trait_code: 'facial_trait',
+			value: 'wispy, green hair that curls several inches off to the side',
+		},
+		{
+			id: 127,
+			trait_code: 'body_trait',
+			value: 'shoes that resemble cat paws',
+		},
+		{
+			id: 128,
+			trait_code: 'personality_trait',
+			value: 'energetic and playful',
+		},
+		{
+			id: 129,
+			trait_code: 'voice_trait',
+			value: 'nasally and mischievous',
+		},
+		{
+			id: 130,
+			trait_code: 'weapon_trait',
+			value: 'a claw-like gauntlet',
+		},
+		{
+			id: 131,
+			trait_code: 'facial_trait',
+			value: 'short, spiky, black hair',
+		},
+		{
+			id: 132,
+			trait_code: 'body_trait',
+			value: 'a tattoo on the left cheek',
+		},
+		{
+			id: 133,
+			trait_code: 'weapon_trait',
+			value: 'a katana',
+		},
+		{
+			id: 134,
+			trait_code: 'facial_trait',
+			value: 'a long, braided, yellow beard',
+		},
+		{
+			id: 135,
+			trait_code: 'body_trait',
+			value: "a tall, white, chef's hat",
+		},
+		{
+			id: 136,
+			trait_code: 'personality_trait',
+			value: 'short-tempered and strict',
+		},
+		{
+			id: 137,
+			trait_code: 'voice_trait',
+			value: 'used for shouting orders and insults',
+		},
+		{
+			id: 138,
+			trait_code: 'weapon_trait',
+			value: 'powerful, crushing kicks',
+		},
+		{
+			id: 139,
+			trait_code: 'facial_trait',
+			value: 'a scar over the left eye',
+		},
+		{
+			id: 140,
+			trait_code: 'body_trait',
+			value: 'a wooden peg leg',
+		},
+		{
+			id: 141,
+			trait_code: 'personality_trait',
+			value: 'prone to kicking nearby people and objects when upset',
+		},
+		{
+			id: 142,
+			trait_code: 'facial_trait',
+			value: 'blonde hair that covers the right eye',
+		},
+		{
+			id: 143,
+			trait_code: 'body_trait',
+			value: 'a pristine black suit and formal dress shoes',
+		},
+		{
+			id: 144,
+			trait_code: 'personality_trait',
+			value: 'suave, chivalrous, and a hopeless romantic',
+		},
+		{
+			id: 145,
+			trait_code: 'voice_trait',
+			value: 'a smooth and charming tenor with one or two French words thrown in every now and again',
+		},
+		{
+			id: 146,
+			trait_code: 'facial_trait',
+			value: 'a very distinct, swirling eyebrow',
+		},
+		{
+			id: 147,
+			trait_code: 'body_trait',
+			value: 'a lit cigarette',
+		},
+		{
+			id: 148,
+			trait_code: 'personality_trait',
+			value: 'hot-tempered',
+		},
+		{
+			id: 149,
+			trait_code: 'facial_trait',
+			value: 'a serious, somber expression',
+		},
+		{
+			id: 150,
+			trait_code: 'body_trait',
+			value: 'a tall, lanky demeanor',
+		},
+		{
+			id: 151,
+			trait_code: 'weapon_trait',
+			value: 'a pair of large, circular, tonfa-style clubs',
+		},
+		{
+			id: 152,
+			trait_code: 'facial_trait',
+			value: 'purple-grey hair and sideburns',
+		},
+		{
+			id: 153,
+			trait_code: 'body_trait',
+			value: 'a massive, gold-plated suit of armor',
+		},
+		{
+			id: 154,
+			trait_code: 'personality_trait',
+			value: 'cruel, ruthless, and arrogant',
+		},
+		{
+			id: 155,
+			trait_code: 'weapon_trait',
+			value: 'poison gas bombs',
+		},
+		{
+			id: 156,
+			trait_code: 'facial_trait',
+			value: "piercing yellow eyes that resemble a hawk's",
+		},
+		{
+			id: 157,
+			trait_code: 'body_trait',
+			value: 'a long, flowing black coat with a floral pattern on the sleeves',
+		},
+		{
+			id: 158,
+			trait_code: 'voice_trait',
+			value: 'stoic, quiet, and menacing',
+		},
+		{
+			id: 159,
+			trait_code: 'weapon_trait',
+			value: 'a massive, man-sized, black-bladed sword',
+		},
+		{
+			id: 160,
+			trait_code: 'facial_trait',
+			value: 'a scar over the right eye',
+		},
+		{
+			id: 161,
+			trait_code: 'body_trait',
+			value: 'a round, pink suit of armor covered in pearls',
+		},
+		{
+			id: 162,
+			trait_code: 'personality_trait',
+			value: 'arrogant and easily angered',
+		},
+		{
+			id: 163,
+			trait_code: 'weapon_trait',
+			value: 'a pair of hidden, spiked shields',
+		},
+		{
+			id: 164,
+			trait_code: 'body_trait',
+			value: 'a large, spiked collar',
+		},
+		{
+			id: 165,
+			trait_code: 'personality_trait',
+			value: 'terrified of fire',
+		},
+		{
+			id: 166,
+			trait_code: 'facial_trait',
+			value: 'short, light blue hair with a cowlick on top',
+		},
+		{
+			id: 167,
+			trait_code: 'body_trait',
+			value: 'a number of small, blue tattoos on the arms and legs',
+		},
+		{
+			id: 168,
+			trait_code: 'personality_trait',
+			value: 'fierce and protective',
+		},
+		{
+			id: 169,
+			trait_code: 'voice_trait',
+			value: 'raspy',
+		},
+		{
+			id: 170,
+			trait_code: 'facial_trait',
+			value: 'long, fuchsia hair tied in a ponytail',
+		},
+		{
+			id: 171,
+			trait_code: 'body_trait',
+			value: 'several small tattoos on the arms',
+		},
+		{
+			id: 172,
+			trait_code: 'weapon_trait',
+			value: 'a shotgun',
+		},
+		{
+			id: 173,
+			trait_code: 'facial_trait',
+			value: 'grey hair styled into five spikes',
+		},
+		{
+			id: 174,
+			trait_code: 'body_trait',
+			value: 'a muscular build',
+		},
+		{
+			id: 175,
+			trait_code: 'personality_trait',
+			value: 'very simple-minded',
+		},
+		{
+			id: 176,
+			trait_code: 'weapon_trait',
+			value: 'six cutlasses',
+		},
+		{
+			id: 177,
+			trait_code: 'facial_trait',
+			value: 'constantly narrowed eyes',
+		},
+		{
+			id: 178,
+			trait_code: 'body_trait',
+			value: 'a hood with large, mouse ears sitting on top',
+		},
+		{
+			id: 179,
+			trait_code: 'personality_trait',
+			value: 'cowardly, yet corrupt and greedy',
+		},
+		{
+			id: 180,
+			trait_code: 'voice_trait',
+			value: 'high-pitched, nasally, and whiny',
+		},
+		{
+			id: 181,
+			trait_code: 'facial_trait',
+			value: 'a thin goatee',
+		},
+		{
+			id: 182,
+			trait_code: 'personality_trait',
+			value: 'arrogant and self-serving',
+		},
+		{
+			id: 183,
+			trait_code: 'facial_trait',
+			value: 'rosy cheeks',
+		},
+		{
+			id: 184,
+			trait_code: 'body_trait',
+			value: 'a necklace of beads and shark teeth',
+		},
+		{
+			id: 185,
+			trait_code: 'voice_trait',
+			value: 'frequently ending sentences with "chew!',
+		},
+		{
+			id: 186,
+			trait_code: 'weapon_trait',
+			value: 'pressurized water bullets with are spewed quickly from the mouth',
+		},
+		{
+			id: 187,
+			trait_code: 'facial_trait',
+			value: 'constantly puckered lips',
+		},
+		{
+			id: 188,
+			trait_code: 'body_trait',
+			value: 'a pair of simple sandals',
+		},
+		{
+			id: 189,
+			trait_code: 'weapon_trait',
+			value: 'spiked gloves',
+		},
+		{
+			id: 190,
+			trait_code: 'facial_trait',
+			value: 'menacing sharp teeth',
+		},
+		{
+			id: 191,
+			trait_code: 'body_trait',
+			value: 'a yellow, collared shirt open revealing a tattoo of the sun',
+		},
+		{
+			id: 192,
+			trait_code: 'voice_trait',
+			value: 'often spoken in a mocking tone',
+		},
+		{
+			id: 193,
+			trait_code: 'weapon_trait',
+			value: 'a formidable, serrated sword',
+		},
+		{
+			id: 194,
+			trait_code: 'facial_trait',
+			value: 'black hair styled into a bob cut',
+		},
+		{
+			id: 195,
+			trait_code: 'body_trait',
+			value: 'a waist-length, blue, leather coat',
+		},
+		{
+			id: 196,
+			trait_code: 'personality_trait',
+			value: 'clumsy',
+		},
+		{
+			id: 197,
+			trait_code: 'voice_trait',
+			value: 'often flustered',
+		},
+		{
+			id: 198,
+			trait_code: 'weapon_trait',
+			value: 'a katana',
+		},
+		{
+			id: 199,
+			trait_code: 'facial_trait',
+			value: 'a pair of rectangular glasses with red frames',
+		},
+		{
+			id: 200,
+			trait_code: 'personality_trait',
+			value: 'obsessed with swords and swordsmanship',
+		},
+		{
+			id: 201,
+			trait_code: 'facial_trait',
+			value: 'a perpetual scowl that is holding two cigars',
+		},
+		{
+			id: 202,
+			trait_code: 'body_trait',
+			value: 'a white jacket that is worn over the shoulders like a cape',
+		},
+		{
+			id: 203,
+			trait_code: 'weapon_trait',
+			value: 'the ability to create, control, and become a massive cloud of thick, gray, smoke',
+		},
+		{
+			id: 204,
+			trait_code: 'facial_trait',
+			value: 'yellow hair in the shape of flower petals, sprouting in a semi-circle around the top of the head',
+		},
+		{
+			id: 205,
+			trait_code: 'body_trait',
+			value: 'a pink, button-up shirt with green frills',
+		},
+		{
+			id: 206,
+			trait_code: 'personality_trait',
+			value: 'very knowlegeable on the history of the area',
+		},
+		{
+			id: 207,
+			trait_code: 'voice_trait',
+			value: 'deep, calm, and wise',
+		},
+		{
+			id: 208,
+			trait_code: 'weapon_trait',
+			value: 'raw, physical strength',
+		},
+		{
+			id: 209,
+			trait_code: 'facial_trait',
+			value: 'a bald head complimented by a white beard hanging from the chin in the shape of a boomerang',
+		},
+		{
+			id: 210,
+			trait_code: 'body_trait',
+			value: 'a large scar on the left bicep accompanied by an aquamarine bracelet',
+		},
+		{
+			id: 211,
+			trait_code: 'personality_trait',
+			value: 'someone who cares deeply for animals',
+		},
+		{
+			id: 212,
+			trait_code: 'weapon_trait',
+			value: 'a quiver full of harpoons',
+		},
+		{
+			id: 213,
+			trait_code: 'body_trait',
+			value: 'a golden crown',
+		},
+		{
+			id: 214,
+			trait_code: 'personality_trait',
+			value: 'someone who acts very regal',
+		},
+		{
+			id: 215,
+			trait_code: 'voice_trait',
+			value: 'flamboyant and theatrical',
+		},
+		{
+			id: 216,
+			trait_code: 'weapon_trait',
+			value: 'a pair of metal baseball bats',
+		},
+		{
+			id: 217,
+			trait_code: 'facial_trait',
+			value: 'long, sky blue hair, pulled back into a ponytail',
+		},
+		{
+			id: 218,
+			trait_code: 'body_trait',
+			value: 'a striped, dark purple tank top',
+		},
+		{
+			id: 219,
+			trait_code: 'personality_trait',
+			value: 'cunning, manipulative, and often feigns helplessness to gain sympathy',
+		},
+		{
+			id: 220,
+			trait_code: 'voice_trait',
+			value: 'soft, regal, and high-pitched',
+		},
+		{
+			id: 221,
+			trait_code: 'weapon_trait',
+			value: 'a pair of small, sharp, jewels that are swung around on the ends of long wires',
+		},
+		{
+			id: 222,
+			trait_code: 'facial_trait',
+			value: 'platinum blonde hair that looks like an 18th-century powdered wig',
+		},
+		{
+			id: 223,
+			trait_code: 'body_trait',
+			value: 'a suit reminiscent of what was worn in 18th-century Colonial America',
+		},
+		{
+			id: 224,
+			trait_code: 'voice_trait',
+			value: 'frequently being cleared by singing three notes in an opera-like fashion',
+		},
+		{
+			id: 225,
+			trait_code: 'weapon_trait',
+			value: 'a series of small, hidden cannons tucked away under folds of hair',
+		},
+		{
+			id: 226,
+			trait_code: 'facial_trait',
+			value: 'pink hair pulled into short twin-tails',
+		},
+		{
+			id: 227,
+			trait_code: 'body_trait',
+			value: 'a short dress with a magenta and white diamond pattern',
+		},
+		{
+			id: 228,
+			trait_code: 'personality_trait',
+			value: 'tough and fierce-looking but a bit of a softie at heart',
+		},
+		{
+			id: 229,
+			trait_code: 'voice_trait',
+			value: "the exact opposite of what you'd expect, providing a stark contrast to what is seen",
+		},
+		{
+			id: 230,
+			trait_code: 'weapon_trait',
+			value: 'a wooden ladder',
+		},
+		{
+			id: 231,
+			trait_code: 'facial_trait',
+			value: 'black hair in short, spiky dreaddlocks',
+		},
+		{
+			id: 232,
+			trait_code: 'body_trait',
+			value: 'a brown trench coat with a pink ascot tie',
+		},
+		{
+			id: 233,
+			trait_code: 'personality_trait',
+			value: 'a bit of a show-off and are constantly bragging',
+		},
+		{
+			id: 234,
+			trait_code: 'voice_trait',
+			value: 'a deep, gruff, and arrogant tone',
+		},
+		{
+			id: 235,
+			trait_code: 'weapon_trait',
+			value: 'the ability to make any part of their own body explosive',
+		},
+		{
+			id: 236,
+			trait_code: 'facial_trait',
+			value: 'a pair of red-tinted sunglasses',
+		},
+		{
+			id: 237,
+			trait_code: 'body_trait',
+			value: 'a tattoo of the number "5" on the right shoulder',
+		},
+		{
+			id: 238,
+			trait_code: 'personality_trait',
+			value: 'often posing and gesturing dramatically',
+		},
+		{
+			id: 239,
+			trait_code: 'facial_trait',
+			value: 'short, blonde hair and bright green eyes',
+		},
+		{
+			id: 240,
+			trait_code: 'body_trait',
+			value: 'a yellow dress decorated in lemons, accompanied by lemon-slice earrings',
+		},
+		{
+			id: 241,
+			trait_code: 'weapon_trait',
+			value: 'the ability to change their body weight from 1 to 20,000 pounds at will',
+		},
+		{
+			id: 242,
+			trait_code: 'body_trait',
+			value: 'a yellow and orange hat',
+		},
+		{
+			id: 243,
+			trait_code: 'weapon_trait',
+			value: 'a dark blue and lime green striped parasol',
+		},
+		{
+			id: 244,
+			trait_code: 'facial_trait',
+			value: 'short, neatly slicked-back, black hair',
+		},
+		{
+			id: 245,
+			trait_code: 'body_trait',
+			value: 'a long, dark, thick, fur coat',
+		},
+		{
+			id: 246,
+			trait_code: 'personality_trait',
+			value: 'a ruthless and cunning mastermind',
+		},
+		{
+			id: 247,
+			trait_code: 'weapon_trait',
+			value: 'the ability to create, control, and become sand',
+		},
+		{
+			id: 248,
+			trait_code: 'facial_trait',
+			value: 'a long, stitched scar across the nose',
+		},
+		{
+			id: 249,
+			trait_code: 'body_trait',
+			value: 'a golden hook in place of the left hand',
+		},
+		{
+			id: 250,
+			trait_code: 'personality_trait',
+			value: 'usually seen smoking a thick cigar',
+		},
+		{
+			id: 251,
+			trait_code: 'facial_trait',
+			value: 'pale skin and deep-set eyes',
+		},
+		{
+			id: 252,
+			trait_code: 'body_trait',
+			value: 'one, gold hoop earring',
+		},
+	],
 }
