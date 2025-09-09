@@ -6,12 +6,16 @@ import { settingsManager } from '../../models/SettingsManager';
 
 export default function SettingsPage() {
   const [showVoiceTrait, setShowVoiceTrait] = useState(true);
+  const [showPersonalityTrait, setShowPersonalityTrait] = useState(true);
+  const [showWeaponTrait, setShowWeaponTrait] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [saveStatus, setSaveStatus] = useState('');
 
   useEffect(() => {
     // Load current settings
     setShowVoiceTrait(settingsManager.getShowVoiceTrait());
+    setShowPersonalityTrait(settingsManager.getShowPersonalityTrait());
+    setShowWeaponTrait(settingsManager.getShowWeaponTrait());
     setIsLoading(false);
   }, []);
 
@@ -24,9 +28,29 @@ export default function SettingsPage() {
     setTimeout(() => setSaveStatus(''), 2000);
   };
 
+  const handlePersonalityTraitToggle = () => {
+    const newValue = settingsManager.togglePersonalityTrait();
+    setShowPersonalityTrait(newValue);
+
+    // Show save confirmation
+    setSaveStatus('saved');
+    setTimeout(() => setSaveStatus(''), 2000);
+  };
+
+  const handleWeaponTraitToggle = () => {
+    const newValue = settingsManager.toggleWeaponTrait();
+    setShowWeaponTrait(newValue);
+
+    // Show save confirmation
+    setSaveStatus('saved');
+    setTimeout(() => setSaveStatus(''), 2000);
+  };
+
   const handleResetSettings = () => {
     settingsManager.resetSettings();
     setShowVoiceTrait(settingsManager.getShowVoiceTrait());
+    setShowPersonalityTrait(settingsManager.getShowPersonalityTrait());
+    setShowWeaponTrait(settingsManager.getShowWeaponTrait());
 
     // Show reset confirmation
     setSaveStatus('reset');
@@ -99,6 +123,80 @@ export default function SettingsPage() {
                 <span className="text-outer-space/60 dark:text-gray-400">Status: </span>
                 <span className={`font-bold ${showVoiceTrait ? 'text-outer-space dark:text-gray-200' : 'text-gray-500 dark:text-gray-400'}`}>
                   {showVoiceTrait ? 'Enabled' : 'Disabled'}
+                </span>
+              </div>
+            </div>
+
+            {/* Personality Trait Toggle */}
+            <div className="mb-8">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex-1 mr-4">
+                  <h3 className="text-lg font-medium text-outer-space dark:text-gray-200 mb-2">
+                    Personality Trait
+                  </h3>
+                  <p className="text-outer-space/70 dark:text-gray-300 text-sm">
+                    Include personality quirks and behavioral traits in character generation.
+                    These traits help define how your character acts and behaves.
+                  </p>
+                </div>
+
+                <button
+                  onClick={handlePersonalityTraitToggle}
+                  className={`
+                    relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-celtic-blue dark:focus:ring-dark-celtic-blue focus:ring-offset-2 dark:focus:ring-offset-dark-outer-space
+                    ${showPersonalityTrait ? 'bg-ripe-mango dark:bg-dark-ripe-mango' : 'bg-gray-300 dark:bg-gray-600'}
+                  `}
+                >
+                  <span
+                    className={`
+                      inline-block h-4 w-4 transform rounded-full bg-white transition-transform
+                      ${showPersonalityTrait ? 'translate-x-6' : 'translate-x-1'}
+                    `}
+                  />
+                </button>
+              </div>
+
+              <div className="text-sm">
+                <span className="text-outer-space/60 dark:text-gray-400">Status: </span>
+                <span className={`font-bold ${showPersonalityTrait ? 'text-outer-space dark:text-gray-200' : 'text-gray-500 dark:text-gray-400'}`}>
+                  {showPersonalityTrait ? 'Enabled' : 'Disabled'}
+                </span>
+              </div>
+            </div>
+
+            {/* Weapon Trait Toggle */}
+            <div className="mb-8">
+              <div className="flex items-start justify-between mb-4">
+                <div className="flex-1 mr-4">
+                  <h3 className="text-lg font-medium text-outer-space dark:text-gray-200 mb-2">
+                    Weapon Trait
+                  </h3>
+                  <p className="text-outer-space/70 dark:text-gray-300 text-sm">
+                    Include weaponry and combat abilities in character generation.
+                    These traits define how your character fights and what weapons they use.
+                  </p>
+                </div>
+
+                <button
+                  onClick={handleWeaponTraitToggle}
+                  className={`
+                    relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-celtic-blue dark:focus:ring-dark-celtic-blue focus:ring-offset-2 dark:focus:ring-offset-dark-outer-space
+                    ${showWeaponTrait ? 'bg-ripe-mango dark:bg-dark-ripe-mango' : 'bg-gray-300 dark:bg-gray-600'}
+                  `}
+                >
+                  <span
+                    className={`
+                      inline-block h-4 w-4 transform rounded-full bg-white transition-transform
+                      ${showWeaponTrait ? 'translate-x-6' : 'translate-x-1'}
+                    `}
+                  />
+                </button>
+              </div>
+
+              <div className="text-sm">
+                <span className="text-outer-space/60 dark:text-gray-400">Status: </span>
+                <span className={`font-bold ${showWeaponTrait ? 'text-outer-space dark:text-gray-200' : 'text-gray-500 dark:text-gray-400'}`}>
+                  {showWeaponTrait ? 'Enabled' : 'Disabled'}
                 </span>
               </div>
             </div>
