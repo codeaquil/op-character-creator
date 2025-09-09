@@ -40,20 +40,6 @@ export default function TraitSelector({
           </option>
         ))}
       </select>
-      
-      {/* Preview sentence */}
-      {selectedValue && (
-        <div className="mt-3 p-3 bg-diamond/50 dark:bg-dark-diamond/50 rounded-lg">
-          <p className="text-outer-space/80 dark:text-gray-300 text-sm">
-            <strong>Preview:</strong> {
-              trait.sentence.replace(
-                '%XXX%', 
-                traitValues.find(tv => tv.id === parseInt(selectedValue))?.value || ''
-              )
-            }
-          </p>
-        </div>
-      )}
     </div>
   );
 }
