@@ -28,7 +28,7 @@ export default function Home() {
               OP Character Creator
             </h1>
             <p className="text-outer-space/70 dark:text-gray-300 text-lg">
-              Generate your own One Piece-inspired character!
+              Generate your own One Piece-inspired TTRPG NPC!
             </p>
           </div>
 
