@@ -24,11 +24,11 @@ export default function Home() {
               <g></g>
               <g></g>
             </svg>
-            <h1 className="text-4xl font-bold text-outer-space dark:text-gray-200 mb-2">
-              OP Character Creator
+            <h1 className="text-3xl font-bold text-outer-space dark:text-gray-200 mb-2">
+              One Piece-Inspired TTRPG Randomized NPC Generator
             </h1>
             <p className="text-outer-space/70 dark:text-gray-300 text-lg">
-              Generate your own One Piece-inspired TTRPG NPC!
+              Generate your own NPC from the world of One Piece!
             </p>
           </div>
 

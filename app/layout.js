@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "OP Character Creator",
+  title: "One Piece Inspired TTRPG Randomized NPC Generator",
   description: "Generate a fictional character based on the One Piece world!",
 };
 
