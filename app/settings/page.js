@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
+import ToggleButton from '../../components/ToggleButton';
 import { settingsManager } from '../../models/SettingsManager';
 
 export default function SettingsPage() {
@@ -103,20 +104,12 @@ export default function SettingsPage() {
                   </p>
                 </div>
 
-                <button
-                  onClick={handleVoiceTraitToggle}
-                  className={`
-                    relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-celtic-blue dark:focus:ring-dark-celtic-blue focus:ring-offset-2 dark:focus:ring-offset-dark-outer-space
-                    ${showVoiceTrait ? 'bg-ripe-mango dark:bg-dark-ripe-mango' : 'bg-gray-300 dark:bg-gray-600'}
-                  `}
-                >
-                  <span
-                    className={`
-                      inline-block h-4 w-4 transform rounded-full bg-white transition-transform
-                      ${showVoiceTrait ? 'translate-x-6' : 'translate-x-1'}
-                    `}
-                  />
-                </button>
+                <ToggleButton
+                  enabled={showVoiceTrait}
+                  onToggle={handleVoiceTraitToggle}
+                  label="Voice Trait"
+                  ariaLabel={showVoiceTrait ? 'Voice trait enabled' : 'Voice trait disabled'}
+                />
               </div>
 
               <div className="text-sm">
@@ -140,20 +133,12 @@ export default function SettingsPage() {
                   </p>
                 </div>
 
-                <button
-                  onClick={handlePersonalityTraitToggle}
-                  className={`
-                    relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-celtic-blue dark:focus:ring-dark-celtic-blue focus:ring-offset-2 dark:focus:ring-offset-dark-outer-space
-                    ${showPersonalityTrait ? 'bg-ripe-mango dark:bg-dark-ripe-mango' : 'bg-gray-300 dark:bg-gray-600'}
-                  `}
-                >
-                  <span
-                    className={`
-                      inline-block h-4 w-4 transform rounded-full bg-white transition-transform
-                      ${showPersonalityTrait ? 'translate-x-6' : 'translate-x-1'}
-                    `}
-                  />
-                </button>
+                <ToggleButton
+                  enabled={showPersonalityTrait}
+                  onToggle={handlePersonalityTraitToggle}
+                  label="Personality Trait"
+                  ariaLabel={showPersonalityTrait ? 'Personality trait enabled' : 'Personality trait disabled'}
+                />
               </div>
 
               <div className="text-sm">
@@ -177,20 +162,12 @@ export default function SettingsPage() {
                   </p>
                 </div>
 
-                <button
-                  onClick={handleWeaponTraitToggle}
-                  className={`
-                    relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-celtic-blue dark:focus:ring-dark-celtic-blue focus:ring-offset-2 dark:focus:ring-offset-dark-outer-space
-                    ${showWeaponTrait ? 'bg-ripe-mango dark:bg-dark-ripe-mango' : 'bg-gray-300 dark:bg-gray-600'}
-                  `}
-                >
-                  <span
-                    className={`
-                      inline-block h-4 w-4 transform rounded-full bg-white transition-transform
-                      ${showWeaponTrait ? 'translate-x-6' : 'translate-x-1'}
-                    `}
-                  />
-                </button>
+                <ToggleButton
+                  enabled={showWeaponTrait}
+                  onToggle={handleWeaponTraitToggle}
+                  label="Weapon Trait"
+                  ariaLabel={showWeaponTrait ? 'Weapon trait enabled' : 'Weapon trait disabled'}
+                />
               </div>
 
               <div className="text-sm">

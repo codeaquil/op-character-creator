@@ -1,8 +1,49 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { settingsManager } from '../models/SettingsManager';
+import ToggleButton from './ToggleButton';
 
 export default function CharacterDisplay({ character, description, onGenerateNew, onEdit, showActions = true, showTraitDetails = true }) {
+  // State for trait visibility toggles
+  const [showVoiceTrait, setShowVoiceTrait] = useState(true);
+  const [showPersonalityTrait, setShowPersonalityTrait] = useState(true);
+  const [showWeaponTrait, setShowWeaponTrait] = useState(true);
+
+  // Load settings on mount and keep them synced
+  useEffect(() => {
+    setShowVoiceTrait(settingsManager.getShowVoiceTrait());
+    setShowPersonalityTrait(settingsManager.getShowPersonalityTrait());
+    setShowWeaponTrait(settingsManager.getShowWeaponTrait());
+  }, []);
+
+  // Toggle handlers
+  const handleToggleTrait = (traitCode) => {
+    if (traitCode === 'voice_trait') {
+      const newValue = settingsManager.toggleVoiceTrait();
+      setShowVoiceTrait(newValue);
+    } else if (traitCode === 'personality_trait') {
+      const newValue = settingsManager.togglePersonalityTrait();
+      setShowPersonalityTrait(newValue);
+    } else if (traitCode === 'weapon_trait') {
+      const newValue = settingsManager.toggleWeaponTrait();
+      setShowWeaponTrait(newValue);
+    }
+  };
+
+  // Check if a trait has a toggle
+  const hasToggle = (traitCode) => {
+    return traitCode === 'voice_trait' || traitCode === 'personality_trait' || traitCode === 'weapon_trait';
+  };
+
+  // Get toggle state for a trait
+  const getToggleState = (traitCode) => {
+    if (traitCode === 'voice_trait') return showVoiceTrait;
+    if (traitCode === 'personality_trait') return showPersonalityTrait;
+    if (traitCode === 'weapon_trait') return showWeaponTrait;
+    return true;
+  };
+
   if (!character) {
     return (
       <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 text-center">
@@ -36,22 +77,43 @@ export default function CharacterDisplay({ character, description, onGenerateNew
       )}
 
       {/* Trait Details */}
-      {showTraitDetails && filteredTraits.length > 0 && (
+      {showTraitDetails && (
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-outer-space dark:text-gray-200 mb-3">Trait Details</h3>
           <div className="space-y-2">
-            {filteredTraits.map(([traitCode, traitValue]) => (
-              <div key={traitCode} className="bg-white/30 dark:bg-gray-700/30 rounded-lg p-3">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                  <span className="font-medium text-outer-space dark:text-gray-200 capitalize">
-                    {traitCode.replace('_', ' ')}:
-                  </span>
-                  <span className="text-outer-space/80 dark:text-gray-300 mt-1 sm:mt-0">
-                    {traitValue.value}
-                  </span>
+            {/* Show all traits (including disabled ones) */}
+            {Object.entries(traits).map(([traitCode, traitValue]) => {
+              const isToggleable = hasToggle(traitCode);
+              const isEnabled = getToggleState(traitCode);
+              
+              return (
+                <div key={traitCode} className="bg-white/30 dark:bg-gray-700/30 rounded-lg p-3">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                        <span className="font-medium text-outer-space dark:text-gray-200 capitalize shrink-0">
+                          {traitCode.replace('_', ' ')}:
+                        </span>
+                        <span className={`${isEnabled ? 'text-outer-space/80 dark:text-gray-300' : 'text-outer-space/40 dark:text-gray-500'} break-words`}>
+                          {isEnabled ? traitValue.value : '[hidden]'}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    {/* Toggle button for toggleable traits */}
+                    {isToggleable && (
+                      <div className="shrink-0">
+                        <ToggleButton
+                          enabled={isEnabled}
+                          onToggle={() => handleToggleTrait(traitCode)}
+                          label={`Toggle ${traitCode.replace('_', ' ')}`}
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
