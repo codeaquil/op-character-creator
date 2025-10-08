@@ -2,7 +2,7 @@
 
 import { settingsManager } from '../models/SettingsManager';
 
-export default function CharacterDisplay({ character, description, onGenerateNew, onEdit, showActions = true }) {
+export default function CharacterDisplay({ character, description, onGenerateNew, onEdit, showActions = true, showTraitDetails = true }) {
   if (!character) {
     return (
       <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 text-center">
@@ -36,7 +36,7 @@ export default function CharacterDisplay({ character, description, onGenerateNew
       )}
 
       {/* Trait Details */}
-      {filteredTraits.length > 0 && (
+      {showTraitDetails && filteredTraits.length > 0 && (
         <div className="mb-6">
           <h3 className="text-lg font-semibold text-outer-space dark:text-gray-200 mb-3">Trait Details</h3>
           <div className="space-y-2">

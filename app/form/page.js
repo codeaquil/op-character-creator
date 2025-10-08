@@ -205,6 +205,7 @@ export default function FormPage() {
                   character={character}
                   description={description}
                   showActions={false}
+                  showTraitDetails={false}
                 />
               ) : (
                 <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 text-center">

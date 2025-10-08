@@ -32,7 +32,7 @@ export default function TraitSelector({
         `}
       >
         <option value="">
-          Choose {trait.title.toLowerCase()}...
+          ...
         </option>
         {traitValues.map((traitValue) => (
           <option key={traitValue.id} value={traitValue.id}>
