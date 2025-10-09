@@ -7,8 +7,8 @@
     "serve": "serve -p 3000 -c serve.json",
     "start": "npm run build && npm run serve",
     "lint": "eslint",
-    "compile-data": "json5 data/data.json5 -o out/data.json",
-    "test-data": "json5 data/data.json5 | jsonlint"
+    "compile-data": "./scripts/compile_data.rb",
+    "test-data": "./scripts/compile_data.rb && cat out/data.json | jsonlint"
   },
   "dependencies": {
     "json5": "^2.2.3",
