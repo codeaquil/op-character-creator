@@ -1,6 +1,7 @@
 # OP Character Creator
 
 [![NextJS Deployment Pipeline](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml/badge.svg)](https://github.com/codeaquil/op-character-creator/actions/workflows/deploy.yml)
+[![Playwright Tests](https://github.com/codeaquil/op-character-creator/actions/workflows/playwright.yml/badge.svg)](https://github.com/codeaquil/op-character-creator/actions/workflows/playwright.yml)
 ![Pirate King Monkey D Luffy](https://img.shields.io/badge/Pirate%20King-Monkey%20D%20Luffy-E62C39)
 
 Generate your own character inspired by the world of One Piece!
@@ -13,24 +14,28 @@ Enable GitHub Pages from settings and this website should be available at
 
 ## Adding New Character Options
 
-1. Create a GitHub branch.
-2. Edit `data/data.json5` with any new character traits. The traits and format
-is commented in data/data.json5.
-3. Create a pull request.
-4. Merge the pull request and wait a few minutes for the new deployment.
+1. Create a GitHub
+[branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository#creating-a-branch).
+2. Edit or replace the file `data/data.csv` while keeping a similar format. (The
+exact format is specified in `data/SCHEMA.md`.)
+3. Create a
+[pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+4. [Merge](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request#merging-a-pull-request)
+the pull request and wait a few minutes for the new deployment.
 
 ## Development
 
 ### Dependencies
 
 - NodeJS v22
-- Ruby 3 (optional)
+- Ruby 3
 
 ### Quick Start
 
 1. `npm i`
-2. `npm run start`
-3. To close the server: `Ctrl-C`
+2. Confirm ruby script to compile data works: `./scripts/compile_data.rb`
+3. `npm run start`
+4. To close the server: `Ctrl-C`
 
 ### Ruby Server
 
@@ -41,10 +46,16 @@ it do:
 2. `ruby ./server.rb`
 3. To close the server: `Ctrl-C`
 
+### Testing
+
+Tests are implemented in [playwright](https://playwright.dev/). Run them with `npm t`
+or launch the full testing UI with `npm run test-ui`. You may need to install Playwright
+system dependencies.
+
 ### How it works
 
-The command `npm run compile-data` will use `json5` to transform the data for
-the website in the out/ folder. This is baked into the `npm run build` command,
+The command `npm run compile-data` will transform the CSV data from the data/ folder
+into JSON in the out/ folder. This is baked into the `npm run build` command,
 which also uses NextJS to build the entire website into out/. A static-file
 server must then serve the entire out/ folder and the website will operate
 normally. The website uses ReactJS 19 and TailwindCSS 4, and should work on all
