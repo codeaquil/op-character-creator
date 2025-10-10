@@ -211,8 +211,15 @@ export default function SettingsPage() {
               <h3 className="text-lg font-medium text-outer-space dark:text-gray-200 mb-3 text-center">
                 Credits
               </h3>
-              
+
               <div className="space-y-3 flex flex-col items-center">
+                <div className="flex items-center justify-center text-outer-space/70 dark:text-gray-300 text-sm">
+                  <span className="font-medium text-outer-space dark:text-gray-200 text-center mx-3 w-100">
+                    One Piece is owned by Shueisha and Eiichiro Oda. This software is not affiliated with them in
+                    anyway, and is only taking inspiration from One Piece under fair use.
+                  </span>
+                </div>
+
                 <div className="flex items-center justify-center text-outer-space/70 dark:text-gray-300 text-sm">
                   <span className="font-medium text-outer-space dark:text-gray-200 mr-2">Lead:</span>
                   <a 
