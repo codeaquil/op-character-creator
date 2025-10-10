@@ -1,4 +1,4 @@
-name: Test
+name: Test Data
 
 on:
   pull_request:
@@ -25,6 +25,10 @@ jobs:
         with:
           node-version: "22"
           cache: npm
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -45,7 +49,6 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: npm ci
-      - name: Check JSON5 Data
+      - name: Check CSV Data
         run: npm run test-data
-      - name: Check JavaScript
-        run:  npm run build # includes compile-data
+
