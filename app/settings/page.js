@@ -89,7 +89,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="bg-diamond dark:bg-dark-diamond rounded-lg p-6 shadow-lg">
-            <h2 className="text-xl font-semibold text-outer-space dark:text-gray-200 mb-6">Character Options</h2>
+            <h2 className="text-center text-xl font-semibold text-outer-space dark:text-gray-200 mb-6">Character Options</h2>
 
             {/* Voice Trait Toggle */}
             <div className="mb-8">
@@ -193,16 +193,13 @@ export default function SettingsPage() {
 
             {/* Reset Section */}
             <div className="border-t border-outer-space/20 dark:border-gray-600 pt-6">
-              <h3 className="text-lg font-medium text-outer-space dark:text-gray-200 mb-3">
+              <h3 className="text-center text-lg font-medium text-outer-space dark:text-gray-200 mb-3">
                 Reset Settings
               </h3>
-              <p className="text-outer-space/70 dark:text-gray-300 text-sm mb-4">
-                Reset all settings back to their default values.
-              </p>
 
               <button
                 onClick={handleResetSettings}
-                className="bg-alizarin-crimson dark:bg-red-600 hover:bg-alizarin-crimson/90 dark:hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center"
+                className="bg-alizarin-crimson dark:bg-red-600 hover:bg-alizarin-crimson/90 dark:hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors min-h-[48px] flex items-center justify-center mx-auto"
               >
                 <span className="mr-2">🔄</span>
                 Reset to Defaults
@@ -216,38 +213,32 @@ export default function SettingsPage() {
               </h3>
               
               <div className="space-y-3 flex flex-col items-center">
-                {/* Lead */}
                 <div className="flex items-center justify-center text-outer-space/70 dark:text-gray-300 text-sm">
                   <span className="font-medium text-outer-space dark:text-gray-200 mr-2">Lead:</span>
                   <a 
                     href="https://raydee99.com" 
                     target="_blank" 
-                    rel="noopener noreferrer"
                     className="text-celtic-blue dark:text-blue-400 hover:underline flex items-center"
                   >
                     <span className="mr-1">🔗</span> Ray Demers
                   </a>
                 </div>
 
-                {/* Developer */}
                 <div className="flex items-center justify-center text-outer-space/70 dark:text-gray-300 text-sm">
                   <span className="font-medium text-outer-space dark:text-gray-200 mr-2">Developer:</span>
                   <a 
                     href="https://codeonwebservices.com" 
                     target="_blank" 
-                    rel="noopener noreferrer"
                     className="text-celtic-blue dark:text-blue-400 hover:underline flex items-center"
                   >
                     <span className="mr-1">🔗</span> Codeon LLC
                   </a>
                 </div>
 
-                {/* Source Code */}
                 <div className="flex items-center justify-center text-outer-space/70 dark:text-gray-300 text-sm">
                   <a 
                     href="https://github.com/codeaquil/op-character-creator" 
                     target="_blank" 
-                    rel="noopener noreferrer"
                     className="text-celtic-blue dark:text-blue-400 hover:underline flex items-center"
                   >
                     <svg width="20" height="20" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg" className="mr-2" fill="currentColor">
